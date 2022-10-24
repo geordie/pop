@@ -32,7 +32,7 @@ Answers to these questions give teams, leaders and executives audit-able visibil
 
 ## Documentation
 
-* This README contains most of the current documentation. Some additional supporting documentation is available at [https://hootsuite.github.io/pop/](https://hootsuite.github.io/pop/)
+* This README contains most of the current documentation. Some additional supporting documentation is available at [https://geordie.github.io/pop/](https://geordie.github.io/pop/)
 
 ## Installation Pre-Requisites
 
