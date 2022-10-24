@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.1'
+gem 'rails', '5.2'
 
-gem 'railties', '5.0.1'
+gem 'railties', '5.2'
 
 gem 'thin'
 
@@ -13,7 +13,7 @@ gem 'mysql2', '~> 0.4.10'
 gem 'yaml_db'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0.1'
+gem 'sass-rails', '~> 5.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -36,9 +36,6 @@ gem 'best_in_place'
 gem 'redcarpet'
 
 gem "paperclip", "~> 5.2.1"
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
 
 gem 'rails-controller-testing'
 

@@ -12,7 +12,7 @@ class WorkItemsControllerTest < ActionController::TestCase
 	end
 
 	test "show works" do
-		get :show, :id => @work_item.id
+		get :show, params: {id: @work_item.id}
 		assert_response :success
 		assert( @work_item.item_key == work_items(:one)[:item_key],
 			@work_item.item_key + " does not equal " + work_items(:one)[:item_key] )
@@ -21,7 +21,7 @@ class WorkItemsControllerTest < ActionController::TestCase
 	end
 
 	test "edit works" do
-		get :edit, :id => @work_item.id
+		get :edit, params: {id: @work_item.id}
 		assert_response :success
 		assert( @work_item.item_key == work_items(:one)[:item_key],
 			@work_item.item_key + " does not equal " + work_items(:one)[:item_key] )

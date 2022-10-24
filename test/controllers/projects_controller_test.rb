@@ -13,7 +13,7 @@ class ProjectsControllerTest < ActionController::TestCase
 	end
 
 	test "show works" do
-		get :show, :id => @project.id
+		get :show, params: {id: @project.id}
 		assert_response :success
 		assert_not_nil assigns(:project)
 	end

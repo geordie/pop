@@ -1,4 +1,4 @@
-class DropDeviseUsers < ActiveRecord::Migration
+class DropDeviseUsers < ActiveRecord::Migration[4.2]
   def change
     drop_table :users
   end

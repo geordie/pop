@@ -1,4 +1,4 @@
-class AddTeamUpdatesCountToTeams < ActiveRecord::Migration
+class AddTeamUpdatesCountToTeams < ActiveRecord::Migration[4.2]
 	def up
 		add_column :teams, :team_updates_count, :integer, :default => 0
 

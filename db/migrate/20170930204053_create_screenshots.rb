@@ -1,4 +1,4 @@
-class CreateScreenshots < ActiveRecord::Migration[5.0]
+class CreateScreenshots < ActiveRecord::Migration[4.2][5.0]
   def change
     create_table :screenshots do |t|
       t.string :title

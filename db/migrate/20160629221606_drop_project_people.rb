@@ -1,4 +1,4 @@
-class DropProjectPeople < ActiveRecord::Migration
+class DropProjectPeople < ActiveRecord::Migration[4.2]
     def up
         drop_table :project_people
     end

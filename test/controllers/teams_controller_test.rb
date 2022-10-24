@@ -18,7 +18,7 @@ class TeamsControllerTest < ActionController::TestCase
 	end
 
 	test "edit works" do
-		get :edit, :id => @team.id
+		get :edit, params: {id: @team.id}
 		assert_response :success
 		assert_not_nil assigns(:team)
 		assert( @team.name == teams(:one)[:name] )
@@ -26,7 +26,7 @@ class TeamsControllerTest < ActionController::TestCase
 	end
 
 	test "show works" do
-		get :show, :id => @team.id
+		get :show, params: {id: @team.id}
 		assert_response :success
 		assert_not_nil assigns(:team)
 		assert( @team.name == teams(:one)[:name] )

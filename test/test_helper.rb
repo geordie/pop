@@ -5,7 +5,7 @@ require "minitest/reporters"
 Minitest::Reporters.use!
 
 class ActiveSupport::TestCase
-  ActiveRecord::Migration.check_pending!
+  ActiveRecord::Migration[4.2].check_pending!
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   #

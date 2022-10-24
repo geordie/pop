@@ -1,4 +1,4 @@
-class AddAttachmentImageToScreenshots < ActiveRecord::Migration
+class AddAttachmentImageToScreenshots < ActiveRecord::Migration[4.2]
   def self.up
     change_table :screenshots do |t|
       t.attachment :image

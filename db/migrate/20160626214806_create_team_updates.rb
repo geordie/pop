@@ -1,4 +1,4 @@
-class CreateTeamUpdates < ActiveRecord::Migration
+class CreateTeamUpdates < ActiveRecord::Migration[4.2]
   def change
     create_table :team_updates do |t|
       t.string :team
