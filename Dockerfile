@@ -1,13 +1,11 @@
-FROM ruby:2.3.3
+FROM ruby:2.5-alpine
 
-RUN apt-get update -qq && apt-get install -y build-essential libmysqlclient-dev nodejs && mkdir /pop
+RUN apk update && apk upgrade && \
+  apk add build-base mariadb-client mariadb-dev nodejs git bash tzdata imagemagick && \
+  rm -rf /var/cache/apk/* && \
+  mkdir /pop
+
 WORKDIR /pop
-
-RUN echo deb http://archive.ubuntu.com/ubuntu precise main universe > /etc/apt/sources.list && \
-  echo deb http://archive.ubuntu.com/ubuntu precise-updates main universe >> /etc/apt/sources.list && \
-  apt-get update && \
-  apt-get install -y imagemagick && \
-  apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ADD . /pop
 RUN bundle install

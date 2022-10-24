@@ -1,19 +1,19 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0'
+gem 'rails', '5.0.1'
 
-gem 'railties', '5.0.0'
+gem 'railties', '5.0.1'
 
 gem 'thin'
 
 gem 'whenever', :require => false
 
-gem 'mysql2', '~> 0.3.18'
+gem 'mysql2', '~> 0.4.10'
 gem 'yaml_db'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0.0'
+gem 'sass-rails', '~> 5.0.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -41,11 +41,6 @@ gem "paperclip", "~> 5.2.1"
 gem 'jbuilder', '~> 1.2'
 
 gem 'rails-controller-testing'
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
 
 group :test do
   gem 'minitest-reporters'
