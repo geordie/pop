@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.2'
+gem 'rails', '6.0.5.1'
 
-gem 'railties', '5.2.2'
+gem 'railties', '6.0.5.1'
 
 gem 'thin'
 
