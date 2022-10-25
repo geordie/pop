@@ -35,7 +35,7 @@ gem 'best_in_place'
 
 gem 'redcarpet'
 
-gem "paperclip", "~> 5.2.1"
+gem "kt-paperclip", "~> 6.2.0"
 
 gem 'rails-controller-testing'
 
