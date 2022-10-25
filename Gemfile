@@ -19,7 +19,7 @@ gem 'sass-rails', '~> 5.1'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.2.0'
+gem 'coffee-rails', '>= 5.0.0'
 
 gem "omniauth-google-oauth2", "~> 0.1.19"
 
