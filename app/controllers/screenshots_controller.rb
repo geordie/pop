@@ -10,6 +10,7 @@ class ScreenshotsController < ApplicationController
 
 	def create
 		@screenshot = Screenshot.new(screenshot_params)
+		@screenshot.image.attach(params[:screenshot][:image])
 		if @screenshot.save
 			flash[:success] = "The screenshot was added!"
 			redirect_to screenshots_path
