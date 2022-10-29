@@ -36,6 +36,7 @@ gem 'best_in_place'
 gem 'redcarpet'
 
 gem "kt-paperclip", "~> 6.2.0"
+gem "mini_magick"
 
 gem 'rails-controller-testing'
 
