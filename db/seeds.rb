@@ -24,11 +24,13 @@ dateCur = DateTime.now
 yearCur = dateCur.year
 
 obj_seed = objectives.size
+team_seed = teams.size
 
 (1..52).each do |week|
 	(1..30).each do |idx|
 		obj_idx = rand(obj_seed)
-		wi = {week: week, year: yearCur, num_people: rand(3) + 1,
+		team_idx = rand(team_seed)
+		wi = {week: week, year: yearCur, num_people: rand(3) + 1, team_id: team_idx,
 			objective: objectives[obj_idx][0], customer_facing: objectives[obj_idx][1]  }
 		work_item = WorkItem.find_or_create_by( id: (week * 100) + idx, item_key: "TKT-" + idx.to_s )
 		work_item.update( wi )
