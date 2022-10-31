@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore local storage
+/storage_dev
+
 # Ignore all log files, temp files, local data and notes.
 /log/*.log
 /tmp
