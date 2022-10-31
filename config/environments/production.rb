@@ -79,5 +79,5 @@ Pop::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Store files locally.
-  config.active_storage.service = :local
+  config.active_storage.service = :production
 end
